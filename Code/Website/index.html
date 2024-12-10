@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seattle Food Recommendation Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        #results {
+            margin-top: 20px;
+        }
+        .recommendation {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .feedback-buttons button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Seattle Food Recommendations</h1>
+        <p>Enter your preferences to find the best dining options in Seattle!</p>
+
+        <label for="cuisine">Preferred Cuisine:</label>
+        <input type="text" id="cuisine" placeholder="e.g., Italian, Seafood, Japanese">
+
+        <label for="price-range">Price Range:</label>
+        <input type="text" id="price-range" placeholder="e.g., $, $$, $$$">
+
+        <button onclick="getRecommendations()">Get Recommendations</button>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
